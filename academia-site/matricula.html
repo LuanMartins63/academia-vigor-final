@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrícula | Vigor Academia</title>
+<meta name="description" content="Formulário de pré-matrícula da Vigor Academia.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">VIGOR<span>.</span>ACADEMIA</a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="planos.html">Planos</a></li>
+      <li><a href="turmas.html">Turmas</a></li>
+      <li><a href="matricula.html" aria-current="page">Matrícula</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="hero" style="padding: 3.2rem 0;">
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div>
+      <p class="hero-eyebrow">MATRÍCULA</p>
+      <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Faça sua pré-matrícula</h1>
+      <p class="lead">Preencha o formulário abaixo. Nossa equipe confirma seus dados e agenda a avaliação física.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="form-card" id="form-matricula" novalidate>
+      <div class="form-grid">
+        <div class="full">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+        </div>
+        <div>
+          <label for="nascimento">Data de nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+        </div>
+
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(21) 90000-0000" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="full">
+          <label for="plano">Plano de interesse</label>
+          <select id="plano" name="plano" required>
+            <option value="">Selecione...</option>
+            <option value="mensal">Mensal — R$ 139/mês</option>
+            <option value="trimestral">Trimestral — R$ 119/mês</option>
+            <option value="semestral">Semestral — R$ 104/mês</option>
+            <option value="anual">Anual — R$ 89/mês</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <fieldset>
+            <legend>Modalidades de interesse</legend>
+            <div class="checkbox-row"><input type="checkbox" id="mod-funcional" name="modalidade" value="funcional"><label for="mod-funcional" style="margin:0;">Funcional</label></div>
+            <div class="checkbox-row"><input type="checkbox" id="mod-spinning" name="modalidade" value="spinning"><label for="mod-spinning" style="margin:0;">Spinning</label></div>
+            <div class="checkbox-row"><input type="checkbox" id="mod-pilates" name="modalidade" value="pilates"><label for="mod-pilates" style="margin:0;">Pilates</label></div>
+            <div class="checkbox-row"><input type="checkbox" id="mod-crossfit" name="modalidade" value="crossfit"><label for="mod-crossfit" style="margin:0;">Crossfit</label></div>
+            <div class="checkbox-row"><input type="checkbox" id="mod-musculacao" name="modalidade" value="musculacao"><label for="mod-musculacao" style="margin:0;">Musculacão livre</label></div>
+          </fieldset>
+        </div>
+
+        <div class="full checkbox-row">
+          <input type="checkbox" id="termos" name="termos" required>
+          <label for="termos" style="margin:0;">Li e aceito o regulamento interno da academia.</label>
+        </div>
+
+        <div class="full">
+          <button type="submit" class="btn btn-primary">Enviar pré-matrícula</button>
+          <div class="form-msg" id="matricula-msg"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>VIGOR ACADEMIA</h4>
+      <p style="max-width:32ch; color:var(--concrete-dark); font-size:0.92rem;">Treino, acompanhamento e comunidade em um só lugar. Unidade Rio de Janeiro — RJ.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="turmas.html">Turmas</a></li>
+        <li><a href="matricula.html">Matrícula</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li>Rua das Academias, 450 — Del Castilho, Rio de Janeiro — RJ</li>
+        <li>(21) 99999-0000</li>
+        <li>contato@vigoracademia.com.br</li>
+        <li>Seg a sex 06h–22h · Sáb 08h–18h · Dom e feriados 08h–14h</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Projeto acadêmico — Desenvolvimento Web 1 · FAETERJ-Rio. Conteúdo fictício para fins didáticos.
+  </div>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
